@@ -1,16 +1,32 @@
-# hiii new_flutter_project
+# Vet app with Flutter
 
-A new Flutter project.
+hiii welcome 
 
-## Getting Started
+# Switch to branch Master for latest updates 
 
-This project is a starting point for a Flutter application.
+Run this commands for getting started 
 
-A few resources to get you started if this is your first Flutter project:
+### Fetch all project dependencies
+```bash
+flutter pub get
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Add required Firebase packages
+```bash
+flutter pub add firebase_core
+flutter pub add firebase_auth
+flutter pub add cloud_firestore
+```
+
+
+### Install Firebase CLI globally (if not already installed)
+```bash
+npm install -g firebase-tools
+```
+
+
+### Run the app
+```bash
+flutter run
+```
