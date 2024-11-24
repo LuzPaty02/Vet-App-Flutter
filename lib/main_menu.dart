@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'animal_detail_view.dart';
+import 'new_animal_view.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'login_view.dart';
 
@@ -106,16 +107,16 @@ try{
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const LoginView()),
-          );
-        },
-        backgroundColor: const Color.fromARGB(222, 0, 79, 132),
-        foregroundColor: const Color.fromARGB(255, 255, 255, 255),
-        child: const Icon(Icons.add),
-      ),
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const NewAnimalView()),
+    );
+  },
+  backgroundColor: const Color.fromARGB(222, 0, 79, 132),
+  foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+  child: const Icon(Icons.add),
+  ),
     );
   }
 }
